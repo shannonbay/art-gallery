@@ -102,6 +102,21 @@ cite {
 
 figcaption span { color: var(--muted); }
 
+.work-source {
+  display: inline-block;
+  margin-top: .2rem;
+  padding: .2rem 0;
+  color: var(--accent);
+}
+
+.work-linked iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 0;
+  background: var(--mat);
+}
+
 .colophon {
   max-width: 1320px;
   margin: 2rem auto 0;

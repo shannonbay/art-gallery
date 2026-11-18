@@ -1,5 +1,18 @@
 (() => {
-  const works = [...document.querySelectorAll(".work")].map((work) => ({
+  document.querySelectorAll(".work-linked").forEach((work) => {
+    const picture = work.querySelector("img");
+    const showInstagramBackup = () => {
+      const frame = document.createElement("iframe");
+      frame.src = `${work.dataset.instagram}embed/`;
+      frame.title = picture.alt;
+      frame.loading = "lazy";
+      picture.closest("a").replaceWith(frame);
+    };
+    picture.addEventListener("error", showInstagramBackup, { once: true });
+    if (picture.complete && picture.naturalWidth === 0) showInstagramBackup();
+  });
+
+  const works = [...document.querySelectorAll(".work:not(.work-linked)")].map((work) => ({
     link: work.querySelector("a"),
     alt: work.querySelector("img").alt,
     caption: work.querySelector("figcaption").innerHTML,
