@@ -12,4 +12,4 @@ Drawings and paintings by Shannon Bay.
 
 ## Copyright
 
-© 2026 Shannon Bay. All rights reserved. The artwork in this repository may not be reused without permission.
+© 2026 Shannon Bay. All rights reserved, except for third-party line art noted in captions. The artwork in this repository may not be reused without permission.
