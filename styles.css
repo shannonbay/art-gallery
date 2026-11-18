@@ -103,7 +103,8 @@ cite {
 figcaption span { color: var(--muted); }
 
 .work-source {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: .2rem;
   padding: .2rem 0;
   color: var(--accent);
