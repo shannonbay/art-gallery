@@ -65,7 +65,7 @@ h1 {
   margin: 0 0 clamp(2.5rem, 5vw, 4.5rem);
 }
 
-.work a {
+.work > a {
   display: block;
   padding: clamp(.75rem, 1.6vw, 1.25rem);
   background: var(--mat);
@@ -73,7 +73,7 @@ h1 {
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.work a:hover {
+.work > a:hover {
   transform: translateY(-3px);
   box-shadow: 0 2px 4px rgb(43 39 35 / .14), 0 20px 36px -16px rgb(43 39 35 / .45);
 }
@@ -206,6 +206,6 @@ figcaption span { color: var(--muted); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .work a { transition: none; }
-  .work a:hover { transform: none; }
+  .work > a { transition: none; }
+  .work > a:hover { transform: none; }
 }
